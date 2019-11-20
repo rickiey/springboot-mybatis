@@ -10,6 +10,10 @@ import java.util.List;
 @Component
 @Mapper
 public interface TestMapper {
+  /**
+   *   selectall 查询 all test
+   * @return List<Test>
+   */
   @Select("select * from test;")
   List<Test> selectall();
 }

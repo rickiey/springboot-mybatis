@@ -20,16 +20,14 @@ public class TestServiceImpl implements TestService {
   @Override
   public List<Test> selectallTest() {
 
-    List<Test> qwe = testMapper.selectall();
-    Iterator iterator = qwe.iterator();
-    while (iterator.hasNext()) {
-        if (iterator.next() == null ) {
-
-        }
+    List<Test> tests = testMapper.selectall();
+    for (Test test : tests) {
+      System.out.println(test.getId());
+      System.out.println(test.getName());
     }
 
    // HashMap<String,String> qwe =  Map<String ,String>();
 
-    return testMapper.selectall();
+    return tests;
   }
 }
