@@ -5,22 +5,22 @@ package com.mybatis.springboot.pojo;
  * @date 2019
  */
 public class Test {
-  private long id;
-  private long name;
+    private long id;
+    private String name;
 
-  public long getId() {
-    return id;
-  }
+    public long getId() {
+        return id;
+    }
 
-  public void setId(long id) {
-    this.id = id;
-  }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-  public long getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(long name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 }
